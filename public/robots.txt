@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow scraping of API endpoints
+Disallow: /api/
+
+# Sitemap (optional - create if you have multiple pages)
+# Sitemap: https://your-domain.com/sitemap.xml

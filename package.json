@@ -1,0 +1,23 @@
+{
+  "name": "video-downloader",
+  "version": "1.0.0",
+  "description": "All-in-one video downloader website supporting multiple platforms",
+  "scripts": {
+    "dev": "wrangler pages dev public --compatibility-date=2024-01-01",
+    "deploy": "wrangler pages deploy public",
+    "preview": "wrangler pages dev public"
+  },
+  "keywords": [
+    "video",
+    "downloader",
+    "youtube",
+    "instagram",
+    "tiktok",
+    "cloudflare"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  }
+}

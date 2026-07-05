@@ -1,0 +1,15 @@
+name = "video-downloader"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "public"
+
+# Cloudflare Pages configuration
+# This project uses Pages Functions for the API endpoints
+
+[env.production]
+# Production environment settings
+routes = [
+    { pattern = "/*", zone_name = "your-domain.com" }
+]
+
+[env.preview]
+# Preview environment settings

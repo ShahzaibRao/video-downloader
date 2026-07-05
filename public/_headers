@@ -1,0 +1,43 @@
+# Security Headers for Cloudflare Pages
+# These headers improve security and are automatically applied to all responses
+
+# Content Security Policy - restrict resource loading
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://api.cobalt.tools https://api.download4.cc https://www.youtube.com; font-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+
+# Cache static assets for 1 hour
+/*.css
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*.png
+  Cache-Control: public, max-age=86400
+
+/*.jpg
+  Cache-Control: public, max-age=86400
+
+/*.jpeg
+  Cache-Control: public, max-age=86400
+
+/*.gif
+  Cache-Control: public, max-age=86400
+
+/*.svg
+  Cache-Control: public, max-age=86400
+
+/*.ico
+  Cache-Control: public, max-age=86400
+
+# Don't cache HTML and API responses
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/api/*
+  Cache-Control: no-store, must-revalidate

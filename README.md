@@ -1,5 +1,7 @@
 # All-in-One Video Downloader
 
+[![Deploy to Cloudflare Pages](https://github.com/ShahzaibRao/video-downloader/actions/workflows/deploy.yml/badge.svg)](https://github.com/ShahzaibRao/video-downloader/actions/workflows/deploy.yml)
+
 A modern, responsive web application that allows users to download videos from multiple platforms including YouTube, Instagram, Twitter/X, TikTok, Facebook, Vimeo, Reddit, and more.
 
 ## Features

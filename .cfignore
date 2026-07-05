@@ -1,0 +1,30 @@
+# Ignore files for Cloudflare Pages deployment
+node_modules/
+.git/
+.wrangler/
+*.log
+.env
+.env.local
+
+# Don't deploy these - they're for local dev only
+package.json
+package-lock.json
+wrangler.toml
+wrangler.jsonc
+
+# Documentation - not needed in deployment
+README.md
+QUICKSTART.md
+DEPLOYMENT.md
+CHANGELOG.md
+PROJECT-SUMMARY.md
+DEPLOY-NOW.md
+🚀-FINAL-SUMMARY.txt
+LICENSE
+.github/GITHUB-ACTIONS-SETUP.md
+
+# Setup scripts - not needed in deployment
+setup.bat
+setup.sh
+.gitignore
+.env.example
